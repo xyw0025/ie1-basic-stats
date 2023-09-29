@@ -151,3 +151,48 @@ e4e4cff Updated README
 5b5e6b8 Updated the README
 a7b1a7d (tag: v1.0.0) Added GUI functionality for mean and median
 ```
+
+------
+
+## Questions
+Using your notes and results, answer the following questions. Some questions have multiple parts, answer each parts for full score. \
+1. Include the answers to the 6 queries from Section 1.
+2. Detail the comprehensive procedure for adding a file named MinMaxCalculation.java to a remote Git repository. Your answer should cover the following key areas:
+• Commands executed on your local machine to initiate the process. \
+• How to manage merges, particularly in the context of collaborative development. \
+• Steps for pushing the changes to the remote repository. \
+• Techniques for identifying the specific commit related to this operation. \
+In your explanation, please integrate best practices such as appropriate naming conventions for branches and commits, as well as the use of .gitignore to exclude files that should not be versioned. \
+3. How many commits did you cherry-pick? Are the commit hashes of the cherry-picked commits identical in main and feature-branch? Briefly explain why.
+4. What happens if you merge a branch from which you previously cherry-picked single commits? How often do the cherry-picked commits appear in the history? Briefly explain why.
+5.  What are the risks of rebasing? Mention at least two risks. Briefly describe a use case in which rebasing can be safely applied.
+6. What are the risks of using reset when a commit has already been pushed?
+7.  Does revert remove the reverted commit? Briefly explain how revert works
+
+
+### Answers
+1. listed at the begining of the file.
+2. Commands for adding the file MinMaxCalculation.java to a remote repo:
+
+```
+git branch # to check which branch we are at
+git checkout master # in the requirements we want to push commits to the main branch
+git add [file_name]
+git commit -m [commit message title] 
+# or git commit then enter detailed message
+# pushing to remote repo
+git push origin 
+``` 
+
+TODO: \
+
+```
+• How to manage merges, particularly in the context of collaborative development
+• Techniques for identifying the specific commit related to this operation.
+In your explanation, please integrate best practices such as appropriate naming conventions for branches and commits, as well as the use of .gitignore to exclude files that should not be versioned.
+
+
+```
+
+3. In section 3 there are 16 commits on main branch related to README.md, 2 commits among them are already on the feature-branch; thus, we cherry-pick 14 commits in section 3.
+
